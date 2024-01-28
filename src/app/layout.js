@@ -1,8 +1,15 @@
 /* eslint-disable new-cap */
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Montserrat, Cormorant } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const cormorant = Cormorant({
+  subsets: ["latin"],
+  variable: "--font-cormorant",
+});
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  variable: "--font-montserrat",
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -12,7 +19,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={`${cormorant.variable} ${montserrat.variable} text-sonja-black font-montserrat`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
