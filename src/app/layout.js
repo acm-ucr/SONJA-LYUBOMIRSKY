@@ -5,10 +5,12 @@ import { Montserrat, Cormorant } from "next/font/google";
 const cormorant = Cormorant({
   subsets: ["latin"],
   variable: "--font-cormorant",
+  weight: "variable",
 });
 const montserrat = Montserrat({
   subsets: ["latin"],
   variable: "--font-montserrat",
+  weight: "variable",
 });
 
 export const metadata = {
