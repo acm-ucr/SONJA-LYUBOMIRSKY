@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${cormorant.variable} ${montserrat.variable} text-sonja-black font-montserrat`}
+        className={`${cormorant.variable} ${montserrat.variable} text-sonja-black font-montserrat flex flex-col items-center justify-center`}
       >
         {children}
       </body>
