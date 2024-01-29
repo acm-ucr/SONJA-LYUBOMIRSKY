@@ -3,7 +3,7 @@ import { BROADCAST } from "./Broadcast";
 import { PAPERS } from "./Papers";
 import { POPULAR_PRESS } from "./PopularPress";
 import { PRINTS } from "./Print";
-import { RECENT_PHD } from "./RecentPhd";
+import { RECENT_PHD } from "./RecentPHD";
 import { RESEARCH } from "./Research";
 import { GrDocumentText } from "react-icons/gr";
 import { IoBookOutline } from "react-icons/io5";
