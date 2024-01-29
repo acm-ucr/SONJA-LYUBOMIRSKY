@@ -4,6 +4,7 @@ import { MdOutlineRateReview } from "react-icons/md";
 import { ImNewspaper } from "react-icons/im";
 import { FiMic } from "react-icons/fi";
 import { GrArticle } from "react-icons/gr";
+import { PiStudentBold } from "react-icons/pi";
 
 export const ICONS = {
   Books: <IoBookOutline />,
@@ -12,4 +13,5 @@ export const ICONS = {
   "Op-Eds/Popular Press": <ImNewspaper />,
   "Sample National Broadcast Media": <FiMic />,
   "Links To Print Coverage": <GrArticle />,
+  "Most Recent PHDs": <PiStudentBold />,
 };
