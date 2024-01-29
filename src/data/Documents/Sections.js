@@ -20,6 +20,6 @@ export const SECTIONS = {
   ],
   lab: [
     { title: "Most Recent PHDs", items: RECENT_PHD },
-    { title: "Current Research Projects:", items: RESEARCH },
+    { title: "Current Research Projects", items: RESEARCH },
   ],
 };
