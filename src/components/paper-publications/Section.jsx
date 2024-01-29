@@ -1,7 +1,7 @@
 import Title from "../Title";
 import Document from "../Document";
 
-const Publications = ({ title, items }) => {
+const Section = ({ title, items }) => {
   return (
     <section id={title} className="w-full">
       <Title text={title} />
@@ -29,4 +29,4 @@ const Publications = ({ title, items }) => {
   );
 };
 
-export default Publications;
+export default Section;

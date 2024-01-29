@@ -3,7 +3,7 @@ import Header from "@/components/Header";
 import Image from "next/image";
 import header from "@/public/publications.webp";
 import Content from "@/components/paper-publications/Content";
-import Publications from "@/components/paper-publications/Publications";
+import Publications from "@/components/paper-publications/Section";
 import { SECTIONS } from "@/data/publications/Sections";
 
 const page = () => {
