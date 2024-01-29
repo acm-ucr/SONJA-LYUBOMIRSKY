@@ -3,7 +3,6 @@ import Header from "./Header";
 import { FiSearch } from "react-icons/fi";
 import { BOOKS } from "@/data/Documents/Books";
 import { PAPERS } from "@/data/Documents/Papers";
-import { UNDER_REVIEW } from "@/data/Documents/UpderReview";
 import { POPULAR_PRESS } from "@/data/Documents/PopularPress";
 import { BROADCAST } from "@/data/Documents/Broadcast";
 import { PRINTS } from "@/data/Documents/Print";
@@ -12,9 +11,8 @@ import { RESEARCH } from "@/data/Documents/Research";
 import Document from "./Document";
 
 const DOCUMENTS = [
-  ...BOOKS,
+  ...[...Object.values(BOOKS)],
   ...[...Object.values(PAPERS)],
-  ...UNDER_REVIEW,
   ...POPULAR_PRESS,
   ...[...Object.values(BROADCAST)],
   ...PRINTS,
