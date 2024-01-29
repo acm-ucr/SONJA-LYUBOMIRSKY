@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import Header from "./Header";
 import { FiSearch } from "react-icons/fi";
-import { BOOKS } from "@/data/Documents/Books";
-import { PAPERS } from "@/data/Documents/Papers";
-import { POPULAR_PRESS } from "@/data/Documents/PopularPress";
-import { BROADCAST } from "@/data/Documents/Broadcast";
-import { PRINTS } from "@/data/Documents/Print";
-import { RECENT_PHD } from "@/data/Documents/RecentPHD";
-import { RESEARCH } from "@/data/Documents/Research";
+import { BOOKS } from "@/data/Books";
+import { PAPERS } from "@/data/Papers";
+import { POPULAR_PRESS } from "@/data/PopularPress";
+import { BROADCAST } from "@/data/Broadcast";
+import { PRINTS } from "@/data/Print";
+import { RECENT_PHD } from "@/data/RecentPHD";
+import { RESEARCH } from "@/data/Research";
 import Document from "./Document";
 
 const DOCUMENTS = [

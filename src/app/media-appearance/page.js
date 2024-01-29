@@ -1,7 +1,7 @@
 import PageLayout from "@/components/PageLayout";
 
 const page = () => {
-  return <PageLayout header="Media Appearance" />;
+  return <PageLayout header="media-appearance" />;
 };
 
 export default page;
