@@ -1,7 +1,7 @@
 import Button from "@/components/Button";
 import Header from "@/components/Header";
 import Image from "next/image";
-import header from "@/public/publications.jpg";
+import header from "@/public/publications.webp";
 
 const page = () => {
   return (
