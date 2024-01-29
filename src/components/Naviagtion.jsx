@@ -5,6 +5,7 @@ import { useState } from "react";
 
 const Naviagtion = () => {
   const [dropdown, setDropdown] = useState("");
+  const [subSection, setSubSection] = useState("");
   return (
     <div className="fixed w-full z-10 top-0 bg-white text-xl h-12">
       <div className="flex gap-3">
@@ -26,13 +27,34 @@ const Naviagtion = () => {
             {dropdown === page && (
               <div className="flex flex-col absolute bg-white font-cormorant w-fit">
                 {navigation.sections.map((section, index2) => (
-                  <Link
-                    className="whitespace-nowrap"
-                    href={`${navigation.link}#${section.title}`}
+                  <div
                     key={index2}
+                    className="relative"
+                    onMouseEnter={() => setSubSection(section.title)}
+                    onMouseLeave={() => setSubSection("")}
                   >
-                    {section.title}
-                  </Link>
+                    <Link
+                      className="whitespace-nowrap"
+                      href={`${navigation.link}#${section.title}`}
+                    >
+                      {section.title}
+                    </Link>
+                    {section.subTab && subSection === section.title && (
+                      <div className="bg-sonja-orange-200 absolute left-[100%] top-0 flex flex-col ">
+                        {Object.keys(section.items).map(
+                          (subSection, index3) => (
+                            <Link
+                              className=" whitespace-nowrap"
+                              href={`${navigation.link}#${subSection}`}
+                              key={index3}
+                            >
+                              {subSection}
+                            </Link>
+                          )
+                        )}
+                      </div>
+                    )}
+                  </div>
                 ))}
               </div>
             )}
