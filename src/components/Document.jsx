@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
@@ -10,13 +11,19 @@ const Document = ({ document }) => {
     <li className="my-2 py-4">
       <span className="inline font-bold">{document.author}&nbsp;</span>
       <span className="inline font-bold">({document.year}).&nbsp;</span>
-      <a
-        target="_blank"
-        href={document.link}
-        className="underline text-sonja-blue inline"
-      >
-        {document.title}.
-      </a>
+      {document.link ? (
+        <Link
+          target="_blank"
+          href={document.link}
+          className="underline text-sonja-blue inline hover:text-sonja-orange-200 duration-300"
+        >
+          {document.title}.
+        </Link>
+      ) : (
+        <div className="underline text-sonja-blue inline hover:text-sonja-orange-200 duration-300">
+          {document.title}.
+        </div>
+      )}
       &nbsp;
       <span className="inline">{document.publisher}.&nbsp;</span>
       {document.notes && (
@@ -24,14 +31,14 @@ const Document = ({ document }) => {
       )}
       {document.buttons &&
         document.buttons?.map((button, index) => (
-          <a
+          <Link
             target="_blank"
             key={index}
             href={button.link}
             className="block items-center gap-2 w-fit text-sm px-3 rounded-full  text-sonja-orange-200 cursor-pointer hover:text-white hover:bg-sonja-orange-200 hover:border-sonja-orange-100 duration-300"
           >
             {button.text}
-          </a>
+          </Link>
         ))}
     </li>
   ) : (
