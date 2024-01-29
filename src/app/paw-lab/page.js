@@ -1,7 +1,7 @@
 import PageLayout from "@/components/PageLayout";
 
 const page = () => {
-  return <PageLayout header="PAW Lab" />;
+  return <PageLayout header="paw-lab" />;
 };
 
 export default page;

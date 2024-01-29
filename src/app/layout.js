@@ -1,4 +1,5 @@
 /* eslint-disable new-cap */
+import Naviagtion from "@/components/Naviagtion";
 import "./globals.css";
 import { Montserrat, Cormorant } from "next/font/google";
 
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${cormorant.variable} ${montserrat.variable} text-sonja-black font-montserrat flex flex-col items-center justify-center`}
       >
+        <Naviagtion />
         {children}
       </body>
     </html>
