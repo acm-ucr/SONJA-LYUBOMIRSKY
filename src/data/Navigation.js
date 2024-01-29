@@ -11,12 +11,30 @@ import { ImNewspaper } from "react-icons/im";
 import { FiMic } from "react-icons/fi";
 import { GrArticle } from "react-icons/gr";
 
-// import work from "@/public/teaching.webp";
+import work from "@/public/teaching.webp";
 import research from "@/public/publications.webp";
 import media from "@/public/tv-audio.webp";
 import lab from "@/public/lab.webp";
+import { TEACHING } from "./Teaching";
 
 export const NAVIGATION = {
+  work: {
+    link: "/work",
+    image: work,
+    header: "Work",
+    subHeader: [
+      {
+        link: "https://scholar.google.com/citations?user=CNFj4ZsAAAAJ&hl=en",
+        text: "UCR Psycho0logy",
+      },
+    ],
+    sections: [
+      {
+        title: "Teaching",
+        items: TEACHING,
+      },
+    ],
+  },
   research: {
     link: "/research",
     image: research,
