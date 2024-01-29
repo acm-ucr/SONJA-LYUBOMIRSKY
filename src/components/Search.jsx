@@ -7,7 +7,7 @@ import { UNDER_REVIEW } from "@/data/Documents/UpderReview";
 import { POPULAR_PRESS } from "@/data/Documents/PopularPress";
 import { BROADCAST } from "@/data/Documents/Broadcast";
 import { PRINTS } from "@/data/Documents/Print";
-import { RECENT_PHD } from "@/data/Documents/RecentPhd";
+import { RECENT_PHD } from "@/data/Documents/RecentPHD";
 import { RESEARCH } from "@/data/Documents/Research";
 import Document from "./Document";
 
