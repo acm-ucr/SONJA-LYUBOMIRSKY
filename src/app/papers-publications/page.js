@@ -2,10 +2,9 @@ import Button from "@/components/Button";
 import Header from "@/components/Header";
 import Image from "next/image";
 import header from "@/public/publications.webp";
-import Books from "@/components/paper-publications/Books";
 import Content from "@/components/paper-publications/Content";
 import Publications from "@/components/paper-publications/Publications";
-import UnderReview from "@/components/paper-publications/UnderReview";
+import { SECTIONS } from "@/data/publications/Sections";
 
 const page = () => {
   return (
@@ -22,9 +21,15 @@ const page = () => {
       </div>
       <div className="w-9/12 flex m-5 justify-evenly">
         <div className="w-8/12">
-          <Books />
-          <Publications />
-          <UnderReview />
+          {SECTIONS.map((section, index) => {
+            return (
+              <Publications
+                key={index}
+                title={section.title}
+                items={section.items}
+              />
+            );
+          })}
         </div>
         <Content />
       </div>

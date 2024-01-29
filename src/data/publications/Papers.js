@@ -1,6 +1,7 @@
-export const PUBLICATIONS = {
+export const PAPERS = {
   "In Progress": [
     {
+      type: "publication",
       author:
         "Walsh, L. C., Montemayor-Dominguez, M., Horton, C., Boz, S. G., &amp; Lyubomirsky, S",
       link: "https://sonjalyubomirsky.com/files/2023/08/Walsh-Montemayor-Dominguez-Horton-Boz-Lyubomirsky-2023.pdf",
@@ -9,6 +10,7 @@ export const PUBLICATIONS = {
       year: "In Progress",
     },
     {
+      type: "publication",
       author:
         "Okabe-Miyamoto, K., Walsh, L. C., Ozer, D. J., &amp; Lyubomirsky, S",
       link: "https://sonjalyubomirsky.com/files/2023/06/Okabe-Miyamoto-Walsh-Ozer-Lyubomirsky-in-press.pdf",
@@ -28,6 +30,7 @@ export const PUBLICATIONS = {
 
   2022: [
     {
+      type: "publication",
       author: "Regan, A., Radošic, N., &amp; Lyubomirsky, S",
       link: "https://sonjalyubomirsky.com/files/2023/03/Regan-Radosic-Lyubomirsky-in-press.pdf",
       title: "Experimental effects of social behavior on well-being",
@@ -35,6 +38,7 @@ export const PUBLICATIONS = {
       year: "2022",
     },
     {
+      type: "publication",
       author: "Lyubomirsky, S",
       link: "https://sonjalyubomirsky.com/files/2022/06/Lyubomirsky-2022.pdf",
       title:
@@ -51,6 +55,7 @@ export const PUBLICATIONS = {
   ],
   2021: [
     {
+      type: "publication",
       author: "Okabe-Miyamoto, K., Folk, D., Lyubomirsky, S., &amp; Dunn, E.W",
       link: "https://sonjalyubomirsky.com/files/2021/01/Okabe-Miyamoto-Folk-Lyubomirsky-Dunn-2021.pdf",
       title:
@@ -59,6 +64,7 @@ export const PUBLICATIONS = {
       year: "2021",
     },
     {
+      type: "publication",
       author: "Reis, H. T., Regan, A., &amp; Lyubomirsky, S",
       link: "https://sonjalyubomirsky.com/files/2022/03/Reis-Regan-Lyubomirsky-2022.pdf",
       title:
@@ -67,6 +73,7 @@ export const PUBLICATIONS = {
       year: "2021",
     },
     {
+      type: "publication",
       author: "Regan, A., Margolis, S., de Wit, H., &amp; Lyubomirsky, S",
       link: "https://sonjalyubomirsky.com/files/2023/02/Regan-Margolis-de-Wit-Lyubomirsky-2021.pdf",
       title:
@@ -77,6 +84,7 @@ export const PUBLICATIONS = {
   ],
   2020: [
     {
+      type: "publication",
       author:
         "Folk, D., Okabe-Miyamoto, K., Dunn, E.W., &amp; Lyubomirsky, S. (2020)",
       link: "https://sonjalyubomirsky.com/files/2020/07/Folk-Okabe-Miyamoto-Dunn-Lyubomirsky-2020.pdf",
@@ -86,6 +94,7 @@ export const PUBLICATIONS = {
       year: "2020",
     },
     {
+      type: "publication",
       author: "Margolis, S., &amp; Lyubomirsky, S. (2020)",
       link: "https://sonjalyubomirsky.com/files/2021/03/Margolis-Lyubomirsky-2020.pdf",
       title:
@@ -97,6 +106,7 @@ export const PUBLICATIONS = {
   ],
   2023: [
     {
+      type: "publication",
       author: "Molla, H., Lee, R., Lyubomirsky, S., &amp; de Wit, H",
       link: "https://sonjalyubomirsky.com/files/2023/09/Molla-Lee-Lyubomirsky-de-Wit-2023-1.pdf",
       title:
@@ -106,6 +116,7 @@ export const PUBLICATIONS = {
     },
 
     {
+      type: "publication",
       author:
         "Regan, A., Margolis, S., Ozer, D.J.. Schwitzgebel, E., &amp; Lyubomirsky, S",
       link: "https://sonjalyubomirsky.com/files/2023/06/Regan-Margolis-Ozer-Schwitzgebel-Lyubomirsky-2023.pdf",
@@ -115,6 +126,7 @@ export const PUBLICATIONS = {
       year: "2023",
     },
     {
+      type: "publication",
       author: "Regan, A., Walsh, L. C., &amp; Lyubomirsky, S",
       link: "https://sonjalyubomirsky.com/files/2023/06/Regan-Walsh-Lyubomirsky-2023.pdf",
       title:
@@ -123,6 +135,7 @@ export const PUBLICATIONS = {
       year: "2023",
     },
     {
+      type: "publication",
       author: "Walsh, L. C., Regan, A., Twenge, J. M., &amp; Lyubomirsky, S",
       link: "https://sonjalyubomirsky.com/files/2023/06/Walsh-Regan-Twenge-Lyubomirsky-2023.pdf",
       title:
@@ -133,6 +146,7 @@ export const PUBLICATIONS = {
   ],
   2017: [
     {
+      type: "publication",
       author:
         "Nelson-Coffey, S. K., Fritz, M. M., Lyubomirsky, S., &amp; Cole, S. W",
       link: "https://sonjalyubomirsky.com/files/2012/09/Nelson-Coffey-Fritz-Lyubomirsky-Cole-2017.pdf",
@@ -149,34 +163,3 @@ export const PUBLICATIONS = {
     },
   ],
 };
-export const UNDER_REVIEW = [
-  {
-    author:
-      "Walsh, L. C., Okabe-Miyamoto, K., Regan, A., Twenge, J. M., & Lyubomirsky, S",
-    link: "https://psyarxiv.com/zcwmv/",
-    title:
-      "The association between well-being and objectively measured versus self-reported smartphone time",
-    publisher: "Manuscript under review.3",
-    year: "2023",
-  },
-  {
-    author: "Walsh, L. C., Regan, A., Okabe-Miyamoto, K., & Lyubomirsky, S",
-    link: "https://psyarxiv.com/c3phw/",
-    title:
-      "Does putting away your smartphone make you happier? The effects of restricting digital media and social media on well-being",
-    year: "2022",
-  },
-  {
-    author: "Ruberton, P. M., Gladstone, J. J., Margolis, S., & Lyubomirsky, S",
-    title:
-      "Adding spice to life: Variety in hedonic spending increases subjective well-being",
-    year: "2017",
-    notes: "Email for copy",
-    buttons: [
-      {
-        text: "Abstract",
-        link: "https://sonjalyubomirsky.com/files/2012/09/Ruberton-Gladstone-Margolis-Lyubomirsky-ABSTRACT.png",
-      },
-    ],
-  },
-];

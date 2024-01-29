@@ -3,6 +3,7 @@ import how from "@/public/the-how.webp";
 
 export const BOOKS = [
   {
+    type: "book",
     title: "The myths of happiness",
     subtitle:
       "What should make you happy, but doesn't, what shouldn't make you happy, but does",
@@ -34,6 +35,7 @@ export const BOOKS = [
     ],
   },
   {
+    type: "book",
     title: "The how of happiness",
     subtitle: "A scientific approach to getting the life you want.",
     author: "Lyubomirsky, S. (2008).",
