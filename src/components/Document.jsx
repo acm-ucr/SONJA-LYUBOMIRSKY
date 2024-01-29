@@ -47,6 +47,17 @@ const Document = ({ document }) => {
     </section>
   ) : (
     <li className="my-2 py-4">
+      {document.link && (
+        <Link
+          href={document.link}
+          className="inline font-bold text-sonja-blue hover:text-sonja-orange-200 duration-300 cursor-pointer"
+        >
+          {document.name}&nbsp;
+        </Link>
+      )}
+      {!document.link && (
+        <span className="inline font-bold">{document.name}&nbsp;</span>
+      )}
       {document.author && (
         <span className="inline font-bold">{document.author}&nbsp;</span>
       )}
