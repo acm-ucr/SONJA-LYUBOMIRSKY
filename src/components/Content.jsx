@@ -1,11 +1,10 @@
-import { SECTIONS } from "@/data/publications/Sections";
 import Link from "next/link";
 
-const Content = () => {
+const Content = ({ content }) => {
   return (
-    <div className="w-1/5">
+    <div className="flex-grow">
       <ol className="space-y-4 text-gray-500 list-outside dark:text-gray-400">
-        {SECTIONS.map((section, index) => (
+        {content.map((section, index) => (
           <li key={index}>
             <Link
               className="hover:text-sonja-orange-200 cursor-pointer"
@@ -25,7 +24,8 @@ const Content = () => {
                     </Link>
                   </li>
                 ))}
-              {section.title === "Publications" &&
+              {(section.title === "Publications" ||
+                section.title === "Sample National Broadcast Media") &&
                 Object.keys(section.items)
                   .reverse()
                   .map((item, index) => (
