@@ -1,7 +1,9 @@
 import { IoBookSharp } from "react-icons/io5";
-import { LuNewspaper } from "react-icons/lu";
+import { IoBookOutline } from "react-icons/io5";
+import { MdOutlineRateReview } from "react-icons/md";
 
 export const ICONS = {
   Books: <IoBookSharp />,
-  Publications: <LuNewspaper />,
+  Publications: <IoBookOutline />,
+  "Under Review": <MdOutlineRateReview />,
 };
