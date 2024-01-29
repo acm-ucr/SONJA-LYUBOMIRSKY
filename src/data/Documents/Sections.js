@@ -49,4 +49,8 @@ export const HEADER = {
       link: "mailto:sonja@ucr.edu",
     },
   ],
+  lab: [
+    { title: "Most Recent PHDs", items: RECENT_PHD },
+    { title: "Current Research Projects", items: RESEARCH },
+  ],
 };
