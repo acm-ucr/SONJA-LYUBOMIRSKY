@@ -11,10 +11,10 @@ import { RESEARCH } from "@/data/Research";
 import Document from "./Document";
 
 const DOCUMENTS = [
-  ...[...Object.values(BOOKS)],
-  ...[...Object.values(PAPERS)],
+  ...[].concat(...Object.values(BOOKS)),
+  ...[].concat(...Object.values(PAPERS)),
+  ...[].concat(...Object.values(BROADCAST)),
   ...POPULAR_PRESS,
-  ...[...Object.values(BROADCAST)],
   ...PRINTS,
   ...RECENT_PHD,
   ...RESEARCH,
