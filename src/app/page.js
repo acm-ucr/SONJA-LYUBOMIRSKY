@@ -1,5 +1,3 @@
-const Home = () => {
-  return <div className="">Hello World</div>;
-};
+import Landing from "@/components/Landing/Landing";
 
-export default Home;
+export default Landing;

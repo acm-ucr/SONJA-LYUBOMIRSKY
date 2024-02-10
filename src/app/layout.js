@@ -1,7 +1,8 @@
 /* eslint-disable new-cap */
-import Naviagtion from "@/components/Naviagtion";
+import Navigation from "@/components/Navigation";
 import "./globals.css";
 import { Montserrat, Cormorant } from "next/font/google";
+import Footer from "@/components/Footer";
 
 const cormorant = Cormorant({
   subsets: ["latin"],
@@ -23,10 +24,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${cormorant.variable} ${montserrat.variable} text-sonja-black font-montserrat flex flex-col items-center justify-center`}
+        className={`${cormorant.variable} ${montserrat.variable} text-sonja-black font-montserrat flex flex-col items-center justify-center min-h-screen`}
       >
-        <Naviagtion />
-        {children}
+        <Navigation />
+        <div className="mt-10 h-full">{children}</div>
+        <Footer />
       </body>
     </html>
   );

@@ -15,8 +15,11 @@ module.exports = {
       colors: {
         sonja: {
           black: "#1E1E1E",
+
           "orange-100": "#F6ECE6",
           "orange-200": "#FF6600",
+          "orange-300": "#FF8600",
+          "orange-400": "#FF4C00",
           blue: "#1E598F",
           gray: "#F7F7F7",
         },

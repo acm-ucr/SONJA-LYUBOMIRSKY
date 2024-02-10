@@ -18,6 +18,11 @@ import lab from "@/public/lab.webp";
 import { TEACHING } from "./Teaching";
 
 export const NAVIGATION = {
+  about: {
+    link: "/about",
+    header: "About",
+    sections: [],
+  },
   work: {
     link: "/work",
     image: work,
