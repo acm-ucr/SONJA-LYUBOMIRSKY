@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="bg-gradient-to-b text-lg py-8 w-full from-sonja-orange-300 to-sonja-orange-400 text-white font-cormorant relative flex items-center justify-center">
+    <div className="bg-gradient-to-b text-lg py-8 w-full mt-8 from-sonja-orange-300 to-sonja-orange-400 text-white font-cormorant relative flex items-center justify-center">
       <div className="w-11/12 flex items-center justify-between">
         <div>
           <p className="text-3xl font-semibold">About Sonja</p>
@@ -14,10 +14,10 @@ const Footer = () => {
           </p>
           <p className="font-semibold mt-4">Contact me</p>
           <Link
-            href="mailto:sample@ucr.edu"
+            href="mailto:sonja.lyubomirsky@ucr.edu"
             className="font-semibold hover:opacity-50"
           >
-            sample@ucr.edu
+            sonja.lyubomirsky@ucr.edu
           </Link>
         </div>
         <div className="flex flex-col">

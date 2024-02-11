@@ -1,5 +1,3 @@
-const Page = () => {
-  return <div>Page</div>;
-};
+import About from "@/components/About/About";
 
-export default Page;
+export default About;
